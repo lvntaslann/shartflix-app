@@ -12,6 +12,65 @@ Bu proje, Nodelabs case projesi olarak figma tasarımları, swagger api endpoint
 
 ---
 
+## 📂 Proje dosya yapısı
+
+```bash
+/frontend
+│
+├── lib
+│   ├── main.dart
+│   │
+│   ├── model
+│   │   ├── user
+│   │   │   └── user_model.dart
+│   │   └── movie
+│   │       ├── movie_model.dart
+│   │       ├── pagination.dart
+│   │       └── data_model.dart
+│   │
+│   ├── services
+│   │   ├── auth_services.dart
+│   │   ├── movie_services.dart
+│   │   └── photo_services.dart
+│   │
+│   ├── cubit
+│   │   ├── add_photo
+│   │   │   ├── add_photo_cubit.dart
+│   │   │   └── add_photo_state.dart
+│   │   ├── movie
+│   │   │   ├── movie_cubit.dart
+│   │   │   └── movie_state.dart
+│   │   ├── favorite_movie
+│   │   │   ├── favorite_movie_cubit.dart
+│   │   │   └── favorite_movie_state.dart
+│   │   ├── auth
+│   │   │   ├── auth_cubit.dart
+│   │   │   └── auth_state.dart
+│   │   └── theme
+│   │       └── theme_cubit.dart
+│   │
+│   ├── pages
+│   │   ├── auth
+│   │   │   ├── login_page.dart
+│   │   │   └── signup_page.dart
+│   │   ├── home
+│   │   │   └── home_page.dart
+│   │   ├── profil
+│   │   │   └── profil_page.dart
+│   │   ├── splash
+│   │   │   └── splash_screen.dart
+│   │   └── add_photo
+│   │       └── add_photo_page.dart
+│   │
+│   ├── utils
+│   ├── constants
+│   ├── routes
+│   ├── themes
+│   └── widgets
+
+```
+---
+
 ## 🎯 Proje Amacı ve Kapsamı
 
 - Flutter kullanarak kullanıcı dostu, modern bir film uygulaması arayüzü geliştirmek  
@@ -72,61 +131,3 @@ Kullanıcıların uygulama üzerinden gerçekleştirebileceği temel işlevler a
 
 ---
 
-## 📂 Proje dosya yapısı
-
-```bash
-/frontend
-│
-├── lib
-│   ├── main.dart
-│   │
-│   ├── model
-│   │   ├── user
-│   │   │   └── user_model.dart
-│   │   └── movie
-│   │       ├── movie_model.dart
-│   │       ├── pagination.dart
-│   │       └── data_model.dart
-│   │
-│   ├── services
-│   │   ├── auth_services.dart
-│   │   ├── movie_services.dart
-│   │   └── photo_services.dart
-│   │
-│   ├── cubit
-│   │   ├── add_photo
-│   │   │   ├── add_photo_cubit.dart
-│   │   │   └── add_photo_state.dart
-│   │   ├── movie
-│   │   │   ├── movie_cubit.dart
-│   │   │   └── movie_state.dart
-│   │   ├── favorite_movie
-│   │   │   ├── favorite_movie_cubit.dart
-│   │   │   └── favorite_movie_state.dart
-│   │   ├── auth
-│   │   │   ├── auth_cubit.dart
-│   │   │   └── auth_state.dart
-│   │   └── theme
-│   │       └── theme_cubit.dart
-│   │
-│   ├── pages
-│   │   ├── auth
-│   │   │   ├── login_page.dart
-│   │   │   └── signup_page.dart
-│   │   ├── home
-│   │   │   └── home_page.dart
-│   │   ├── profil
-│   │   │   └── profil_page.dart
-│   │   ├── splash
-│   │   │   └── splash_screen.dart
-│   │   └── add_photo
-│   │       └── add_photo_page.dart
-│   │
-│   ├── utils
-│   ├── constants
-│   ├── routes
-│   ├── themes
-│   └── widgets
-
-```
----
