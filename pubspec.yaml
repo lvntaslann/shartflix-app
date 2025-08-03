@@ -1,5 +1,5 @@
 name: shartflix
-description: "A new Flutter project."
+description: "Basic Movie App"
 publish_to: 'none'
 version: 0.1.0
 
@@ -9,13 +9,34 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  carousel_slider: ^5.1.1
+  http: ^1.4.0
+  shared_preferences: ^2.5.3
+  bloc: ^9.0.0
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.7
+  infinite_scroll_pagination: ^5.1.0
+  liquid_pull_to_refresh: ^3.0.1
+  image_picker: ^1.1.2
+  flutter_launcher_icons: ^0.14.4
+  confetti: ^0.8.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
 
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/app-images/SinFlixLogo.png"
+  min_sdk_android: 23
+  adaptive_icon_foreground: "assets/app-images/SinFlixLogo.png"
+
+
 flutter:
   uses-material-design: true
   assets:
-    - assets/
+    - assets/app-images/
+    - assets/icons/

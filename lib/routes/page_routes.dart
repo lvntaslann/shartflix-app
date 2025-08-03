@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shartflix/pages/add_photo_page.dart';
+import 'package:shartflix/pages/add_photo/add_photo_page.dart';
 
-import '../pages/home_page.dart';
-import '../pages/login_page.dart';
-import '../pages/signup_page.dart';
+import '../pages/mainpage_controller.dart';
+import '../pages/auth/login_page.dart';
+import '../pages/auth/signup_page.dart';
 
 class PageRoutes {
   static void goToLogin(BuildContext context) {
@@ -20,9 +20,13 @@ class PageRoutes {
 
   static void goToHome(BuildContext context, {bool replace = false}) {
     if (replace) {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => HomePage()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const MainPageController()));
     } else {
-      Navigator.push(context, MaterialPageRoute(builder: (_) => HomePage()));
+      Navigator.push(context, MaterialPageRoute(builder: (_) =>const MainPageController()));
     }
+  }
+
+  static void goAddPhoto(BuildContext context) {
+    Navigator.push(context, MaterialPageRoute(builder: (_) => AddPhotoPage()));
   }
 }

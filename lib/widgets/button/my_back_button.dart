@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-
+import 'package:shartflix/themes/app_colors.dart';
 import '../../utils/size.dart';
 
-class BackButton extends StatelessWidget {
-  const BackButton({
+class MyBackButton extends StatelessWidget {
+  const MyBackButton({
     super.key,
   });
 
@@ -15,14 +15,14 @@ class BackButton extends StatelessWidget {
         width: ScreenSize.getSize(context).width*0.10,
         height: ScreenSize.getSize(context).height*0.10,
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.10),
+          color: AppColors.backButtonBackgroundColor,
           shape: BoxShape.circle,
           border: Border.all(
             width: 1,
-            color: Colors.white.withOpacity(0.1)
+            color: AppColors.backButtonStrokeColor
           )
         ),
-        child:const Icon(Icons.arrow_back,color: Colors.white,),
+        child: Icon(Icons.arrow_back,color: AppColors.backButtonIconColor,),
       ),
     );
   }

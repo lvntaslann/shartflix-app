@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shartflix/themes/app_colors.dart';
-
 import '../../utils/size.dart';
 
 class DifferentLoginButton extends StatelessWidget {
