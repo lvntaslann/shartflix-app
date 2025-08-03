@@ -127,7 +127,8 @@ Kullanıcıların uygulama üzerinden gerçekleştirebileceği temel işlevler a
 ### ⚙️ 4. Genel İşlevler
 - 🚀 Splash screen eklendi  
 - 🎉 Kayıt olma işlemi başarılı olunca konfeti animasyonu  
-- 🖼️ Uygulama logosu ve genel UI iyileştirmeleri  
+- 🖼️ Uygulama logosu ve genel UI iyileştirmeleri
+- 🔃 Tema değiştirme için yapı oluşturuldu renk kodları dosya üzerinde düzenlenerek kısa sürede gerçekleştirilebilir.
 
 ---
 
